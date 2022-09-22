@@ -6,19 +6,47 @@
         Home
     </title>
     <style>
+        ul
+        {
+            list-style:none;
+        }
+        ul li::before
+        {   content: "\2022";
+            color:brown;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            line-height: 1.7;
+            font-size: 100%;
+
+        }
         li {
             font-family: Arial;
+            background-color: rgb(206, 231, 233);
+            
+        }
+        .heading
+        {
+            color:black;
+            background-color:gray;
+            padding-left: 10px;
+        
+        }
+        #angular
+        {
+            color:blue;
         }
     </style>
 </head>
 
 <body>
 
-    <h1> Career Objectives </h1>
+    <h1> <span class="heading">Career Objectives:-&nbsp;&nbsp;&nbsp;</span> </h1>
     <p> <big>TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</big></p>
-    <h2> Professional Summary </h2>
+    <h2> <span class="heading">Professional Summary :-&nbsp;&nbsp;&nbsp;</span></h2>
     <ul>
-        <li> Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3,
+        <li> Having 1 years of experience in developing Single page Web Applications using <span id="angular">Angular 8</span>, HTML5, CSS3,
             Bootstrap 5, JavaScript, TypeScript</li>
         <li> Experience on working with version control system - GIT and GitHub </li>
         <li> Experience working with JIRA for user stories and bug tracking </li>
