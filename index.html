@@ -4,32 +4,57 @@
         <title>My Profile</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <style>
-            .head1
-            {padding-top: 7px;
-                padding-bottom: 5px;
-                margin: auto;
+            
+            header
+            {
+                margin-top: 0px;
+                padding-top: 0px;
+                /* padding-bottom: 10px; */
+                
+                margin-top: 0px;
+                
+                
                 width: 100%;
-                height: 50px;
-                color: white;
-                background-color: rgb(20, 5, 5);
+                height: 20px;
+                color:white;
+                font-family:'poppins' ;
+                font-size: larger;
+                background-color:black ;  
+                text-align:center;
+                border-radius: 35px 40px;
             }
+            
             
            body
            {
-            margin: 0;
-            padding: 0;
+            margin-right: 80px;
+            margin-left: 80px;
+            padding: 0px;
             background-image:url(bodyback.jpg);
             font-family: Arial;
-            color: black;
+            color:white; 
+            background-size: cover;
+           }
+           .nav
+           {
+            font-family: 'Sofia', cursive;
+            font-weight: bolder;
+            font-size: larger;
+            margin-top: 17px;
+            
+            
            }
            .nav ul
            { list-style-type: none;
-            background-color: black;
+            background-color:black;
             margin:auto;
             padding: 0;
             text-align: center;
             width: 100%;
+            border-radius: 35px 40px;
 
            }
            .nav li
@@ -39,34 +64,46 @@
            .nav a
            {
             text-decoration: none;
-            color: white;
+            color:white;
             display: block;
             width: 100%;
             padding: 25px 20px;
 
            }
+           #header
+           {
+            margin-top: 0px;
+           }
        .nav a:hover
        {
         background-color:mediumseagreen;
        }
+       #footer
+       {
+        background-color: black;
+        color: text;
+        height: 30%;
+        border-radius: 20px 25px;
+
+       }
         </style>
     </head>
     <body>
-        <header>
-            <div class="head1">
-                <p style="text-align:center ;"><i class="fa fa-user-circle-o"
+        <header class="header">
+            <!-- <div class="head1"> -->
+                <i class="fa fa-user-circle-o"
                         aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pradnya
                     Kolase
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-phone-square" aria-hidden="true"></i>
                     &nbsp;&nbsp;&nbsp;&nbsp;8104834526
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;pradnya.kolase1994@gmail.com
-                </p>
-            </div>
+                
+            <!-- </div> -->
         </header>
-        <br>
-        <br>
+        
+        
 
         <div class="nav">
             <ul>
@@ -81,8 +118,8 @@
                 <li><a href="other.html" target="my_frame">OTHERS</a></li>
             </ul>
         </div>
-        <iframe name="my_frame" target="_blank" width="1500px" height="450px"></iframe>
-        <footer>
+        <iframe name="my_frame" style="border: none;" target="_blank" width="1500px" height="450px"></iframe>
+        <footer id="footer">
             <p style="text-align:center ;">
                 <b>FOLLOW US:</b>
                 <a href="https://in.linkedin.com/"><i class="fa
