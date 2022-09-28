@@ -4,7 +4,7 @@
         <title>My Profile</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+            <!-- <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet"> -->
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <style>
             
@@ -22,39 +22,42 @@
                 color:white;
                 font-family:'poppins' ;
                 font-size: larger;
-                background-color:black ;  
+                font-style: italic;
+                background-color:#34495e ;  
                 text-align:center;
-                border-radius: 35px 40px;
+                /* border-radius: 35px 40px; */
             }
             
             
            body
            {
-            margin-right: 80px;
-            margin-left: 80px;
+            /* margin-right: 80px; */
+            /* margin-left: 80px; */
+            margin-top: 0px;
             padding: 0px;
             background-image:url(bodyback.jpg);
             font-family: Arial;
             color:white; 
             background-size: cover;
+            margin: 0px 0px 0px 0px;
            }
            .nav
            {
-            font-family: 'Sofia', cursive;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bolder;
-            font-size: larger;
+            font-size: x-large;
             margin-top: 17px;
             
             
            }
            .nav ul
            { list-style-type: none;
-            background-color:black;
+             background-color:black; 
             margin:auto;
             padding: 0;
             text-align: center;
             width: 100%;
-            border-radius: 35px 40px;
+            /* border-radius: 35px 40px; */
 
            }
            .nav li
@@ -80,11 +83,31 @@
        }
        #footer
        {
-        background-color: black;
-        color: text;
-        height: 30%;
-        border-radius: 20px 25px;
+        background-color:gray;
+        color: white;
+        height: 170px;
+        padding-top: 10px;
+        /* border-radius: 20px 25px; */
 
+       }
+       .foo
+       {
+        display: inline-block;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        margin-left: 550px ;
+        font-size:x-large;
+       }
+       .foo a
+       {
+        margin-left: 20px;
+        color: white;
+        font-size: xx-large;
+       }
+       p
+       {
+        color: black;
        }
         </style>
     </head>
@@ -119,11 +142,14 @@
             </ul>
         </div>
         <iframe name="my_frame" style="border: none;" target="_blank" width="1500px" height="450px"></iframe>
+        
         <footer id="footer">
+            <div class="foo">
             <p style="text-align:center ;">
-                <b>FOLLOW US:</b>
-                <a href="https://in.linkedin.com/"><i class="fa
-                        fa-linkedin-square" aria-hidden="true"></i></a>
+               FOLLOW US: 
+
+               <a href="https://in.linkedin.com/"><i class="fa
+                fa-linkedin-square" aria-hidden="true"></i></a> 
                 <a href="https://www.google.com/"><i class="fa fa-google"
                         aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa fa-instagram"
@@ -131,8 +157,8 @@
                 <a href="https://www.facebook.com/"><i class="fa
                         fa-facebook-official" aria-hidden="true"></i></a>
             </p>
-        </footer>
-
+        </div>
+    </footer>
     </body>
 
 </html>
