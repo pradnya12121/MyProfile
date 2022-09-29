@@ -8,32 +8,50 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <style>
             
-            header
+            .header
             {
                 margin-top: 0px;
                 padding-top: 0px;
-                /* padding-bottom: 10px; */
+                padding-bottom: 0px; 
                 
-                margin-top: 0px;
+            
                 
                 
                 width: 100%;
-                height: 20px;
+                height: 30px;
                 color:white;
                 font-family:'poppins' ;
                 font-size: larger;
                 font-style: italic;
                 background-color:#34495e ;  
                 text-align:center;
+            
                 /* border-radius: 35px 40px; */
             }
             
-            
+            .header ul li
+            {
+                display: inline-block;
+                margin-left: 20px;
+
+            }
+            .header li
+            { 
+                list-style: none;
+            }
+            .header ul
+            {
+                padding-top: 3px;
+            }
+            .header  ul li
+            {
+                text-shadow: 4px 2px 5px  #ff8000 ;
+            }
            body
            {
             /* margin-right: 80px; */
             /* margin-left: 80px; */
-            margin-top: 0px;
+        
             padding: 0px;
             background-image:url(bodyback.jpg);
             font-family: Arial;
@@ -80,6 +98,7 @@
        .nav a:hover
        {
         background-color:mediumseagreen;
+        text-shadow: 6px  4px 5px #ff8000;
        }
        #footer
        {
@@ -109,27 +128,41 @@
        {
         color: black;
        }
+       .foo ul li
+       {
+        display: inline-block;
+        margin-left: 10px;
+        text-shadow: 4px 2px 5px black;
+        
+       }
+       .foo ul
+       {
+        text-shadow: 4px 2px 5px black;
+       }
+    
         </style>
     </head>
     <body>
         <header class="header">
             <!-- <div class="head1"> -->
-                <i class="fa fa-user-circle-o"
-                        aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pradnya
-                    Kolase
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;8104834526
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;pradnya.kolase1994@gmail.com
+                <ul>
+               <li> <i class="fa fa-user-circle-o"
+                aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                Pradnya
+            Kolase</li>
                 
+                   <li> <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    8104834526</li>
+                <li> <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;pradnya.kolase1994@gmail.com</li>
+                   
+                </ul>
             <!-- </div> -->
         </header>
         
         
 
         <div class="nav">
-            <ul>
+            <ul> 
                 <li><a href="home.html" target="my_frame">HOME</a></li>
                 <li><a href="techStack.html" target="my_frame">TECH STACK</a></li>
                 <li><a href="education.html" target="my_frame">EDUCATION</a></li>
@@ -145,17 +178,23 @@
         
         <footer id="footer">
             <div class="foo">
-            <p style="text-align:center ;">
-               FOLLOW US: 
-
-               <a href="https://in.linkedin.com/"><i class="fa
-                fa-linkedin-square" aria-hidden="true"></i></a> 
-                <a href="https://www.google.com/"><i class="fa fa-google"
-                        aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
+            
+                <!-- <p style="text-align:center ;"> -->
+                    
+               <ul>FOLLOW US:
+                 
+                <li>  <a href="https://in.linkedin.com/"><i class="fa
+                    fa-linkedin-square" aria-hidden="true"></i></a> </li>
+               
+             
+                <li><a href="https://www.google.com/"><i class="fa fa-google"
+                    aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a></li>
+               <li>
                 <a href="https://www.facebook.com/"><i class="fa
-                        fa-facebook-official" aria-hidden="true"></i></a>
+                        fa-facebook-official" aria-hidden="true"></i></a></li>
+                    </ul>
             </p>
         </div>
     </footer>
